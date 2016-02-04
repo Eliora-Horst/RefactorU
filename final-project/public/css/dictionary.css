@@ -1,0 +1,22 @@
+.form-input{
+	width: 70%;
+	margin: auto;
+	margin-top: 10%;
+	display: block;
+}
+.form-input form > input{
+	font-size: 20px;
+}
+h1{
+	font-family: SFNewRepublic;
+	font-size: 40px;
+	top: 35%;
+	text-align: left;
+}
+h2{
+	display: inline-block;
+}
+.play{
+	height: 20px;
+	display: inline-block;
+}

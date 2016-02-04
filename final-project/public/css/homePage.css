@@ -1,0 +1,121 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+}
+h1 {
+	font-family: SFNewRepublic;
+	font-size: 25px;
+	position: absolute;
+	z-index: 15;
+	padding: 10px;
+	text-align: center;
+	overflow: hidden;
+	left: 50%;
+  	top: 45%;
+  	transform: translate(-50%, -50%);
+  	width: 100%;
+  	margin-top: 10px;
+}
+.centering{
+	text-align: center;
+	margin: auto;
+}
+.side-bar{
+	background-image: url(../images/side-back.png);
+	background-size: cover;
+	color: white;
+	height: 100vh;
+	width: 33%;
+/*	border: 1px solid black;*/
+	position: absolute;
+	z-index: 8;
+	box-shadow: 1px 0px 5px black;
+}
+.side-bar a{
+	color: white;
+}
+.images{
+	width: 50%;
+	z-index: 12;
+	position: absolute;
+  	left: 50%;
+  	top: 25%;
+  	transform: translate(-50%, -50%);
+  	padding-bottom: 10px;
+}
+
+.links{
+	display: block;
+	height: 100vh;
+	z-index: 10;
+	position: absolute;
+	width: 33%;
+	top: 50%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+}
+.links ul{
+	margin-top: 50vh;
+	background-color: grey;
+	margin-right: 5px;
+	width: 100%;
+	box-shadow: 0 4px 10px -2px black;
+	border: 1px solid #101010;
+}
+.links li{
+	padding: 12px;
+	width: 20vw;
+	margin-left: 10%;
+}
+.links li:hover{
+	background-color: white;
+}
+.links-style{
+	font-family: SFNewRepublic;
+	font-size: 25px;
+	color: white;
+}
+.popOut{
+	background-color: white;
+	opacity: .8;
+	position: absolute;
+	border-radius: 10px;
+	height: 50%;
+	width: 33vw;
+	margin-left: 100%;
+	top:25%;
+	left: 16.6vw;
+	padding: 20px;
+	border: 1px solid #C0C0C0;
+}
+.popOut p{
+	padding: 10px;
+	font-size: 25px;
+	margin-top: 5%;
+}
+.mainBody{
+	width: 70vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 5;
+	right: 0;
+	background: url(../images/background.png);
+	animation: play 20s linear infinite;
+	background-position: 0px 0px;
+	background-color: #181818 ;
+	box-shadow: 0px 0px 5px black;
+	opacity: .8;
+}
+@keyframes play{
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+@font-face{
+	font-family: 'SFNewRepublic';
+	src: url('../fonts/SFNewRepublic/SFNewRepublic.ttf') format('truetype');
+}

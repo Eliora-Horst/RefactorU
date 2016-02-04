@@ -1,0 +1,10 @@
+.OnjarWalk{
+	width: 100px;
+	height: 100px;
+	background: url('Sprites/Walk-Sprite.png');
+	animation: play 1s steps(8) infinite;
+}
+
+@keyframes play{
+	100% {background-position: -800px;}
+}

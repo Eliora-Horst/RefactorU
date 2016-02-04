@@ -1,0 +1,45 @@
+************* Oct 5 *************
+Node: JS runtime environment
+
+Difference between node.js and browswer js: 
+	No window (command line interface)
+	No DOM
+
+	Modules
+	File system access
+	Networking access
+	Hardware access
+
+	Web server
+
+Running a script is like running a function; the script itself can have arguments
+Access command-line args with "process.argv"
+	process.argv[0] = 'node'
+	process.argv[1] = script
+	process.argv[2 +] = args
+
+Share code between files with 'module.exports' and 'require()'
+	require returns value of parameter
+
+fs is a core modules
+
+npm install <package-name> : adds module to node_modules folder
+
+When requiring installed modules, you don't need to use a filepath.  Node looks for modules in node_module folder
+
+--save : adds to package.json
+
+patch/fix: fixes bug, doesn't change how module is use
+minor/feature: new function, old code still in place
+major/fail: breaking changes
+
+
+DNS (domain name server) : reach out to DNS, DNS returns IP address of website
+	Send request to port 80
+	The server will read the request
+	Server determines who is requesting, what they want etc
+	Returns a response packet
+
+************* Oct 6 *************
+npm install -g nodemon
+nodemon app.js

@@ -1,0 +1,25 @@
+{
+  "name": "lingo",
+  "version": "1.0.0",
+  "description": "App for translating words and generating quizzes",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "google-translate": "^1.0.0",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HrothgarXII/Lingo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HrothgarXII/Lingo/issues"
+  },
+  "homepage": "https://github.com/HrothgarXII/Lingo#readme"
+}

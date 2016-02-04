@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="dictionaryApp">
+	<head>
+		<title>Middle English Dictionary</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/homePage.css">
+		<link rel="stylesheet" type="text/css" href="../css/textsPage.css">
+		<link rel="stylesheet" type="text/css" href="../css/dictionary.css">
+		<link rel="icon" type="image/png" href="../images/favicon.ico">
+	</head>
+
+	<body ng-controller="dictionaryController">
+	<div class="top-nav nav-btn">
+				<ul>
+				<img src="../images/logo.png" class="logo">
+					<li><a href="../html/homePage.html">Home</a></li>
+					<li><a href="../html/textsPage.html">Texts</a></li>
+					<li><a href="../html/dictionary.html">Dictionary</a></li>
+					<li><a href="../html/translation.html">Translate</a></li>
+					<li><a href="../html/resourcesPage.html">Resources</a></li>
+					<li><a href="../html/contact.html">Contact</a></li>
+				</ul>
+		</div>
+
+		<div class="main">
+		<h1>Middle English Dictionary</h1>
+
+			<div class="form-input">
+				<form ng-submit = "submitQuery()">
+					<input name="queryEntry" placeholder="Search Word" type="text" ng-model = "queryEntry">
+
+					<input type="submit" value="Search">
+				</form>
+			
+				<h2>{{translate.MidEng}} </h2>
+				<audio id="myAudio" src="{{$sce.trustAsResourceUrl(translate.Audio)}}"></audio>
+				<button type="button" ng-show = "translate.Audio" onclick="aud_play_pause()">
+					<img src="../images/audio_play.png" class="play">
+				</button>
+				<h4>{{translate.PoS}}</h4>
+				<h3>{{translate.DictDef}}</h3>
+				<br>
+				<h4 ng-show="translate.AltSp">Alternate Spellings: {{translate.AltSp}}</h4>
+
+			</div>
+			<script type="text/javascript" src="../js/dictionary.js"></script>
+			<script type="text/javascript" src = "../js/dictAudio.js"></script>
+		</div>
+	</body>
+	<footer>
+		<div class = "footer-nav nav-btn centering">
+			<nav>
+				<ul>
+					<li><a href="../html/homePage.html">Home</a></li>
+					<li><a href="../html/textsPage.html">Texts</a></li>
+					<li><a href="../html/dictionary.html">Dictionary</a></li>
+					<li><a href="../html/translation.html">Translate</a></li>
+					<li><a href="../html/resourcesPage.html">Resources</a></li>
+					<li><a href="../html/contact.html">Contact</a></li>
+				</ul>
+				<p>Modern Medieval Database &copy;2015</p>
+			</nav>
+		</div>
+	</footer>
+</html>

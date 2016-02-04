@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app = "homeApp">
+	<head>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/homePage.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<title>Home - Modern Medieval Database</title>
+		<link rel="icon" type="image/png" href="../images/favicon.ico">
+	</head>
+	<body>
+		<div class="side-bar">
+			<img src="../images/logo.png" class="images">
+				<h1>Modern Medieval Database</h1>
+
+		</div>
+
+		<div class = "links">
+			<nav>
+				<ul ng-controller = "navController">
+					<li ng-repeat = "data in links" ng-mouseenter = "hoverOn(data)" ng-mouseleave = "hoverOn(data)">
+						<a href="{{data.source}}"class="links-style">{{data.link}}</a>
+						<span ng-show = "data.show" class = "popOut">
+							<p>{{data.text}}</p>
+						</span>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<div class = "mainBody">
+			
+		</div>
+
+		<script type="text/javascript" src = "../js/homePage.js"></script>
+	</body>
+</html>

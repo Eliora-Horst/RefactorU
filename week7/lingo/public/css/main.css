@@ -1,0 +1,27 @@
+body{
+	background-image: url(earth.jpg);
+	height: 100vh;
+}
+.main-body{
+	width: 75vw;
+	height: 100vh;
+	margin: auto;
+	background-color: rgba(255,255,255,0.3)
+}
+.main-body form{
+	text-align: center;
+}
+.main-body form > input{
+	font-size: 20px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+.images{
+	margin-left:30%;
+	width: 40%;
+	padding: 10px;
+}
+h3{
+	margin-left: 25%;
+	padding: 20px;
+}

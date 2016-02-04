@@ -1,0 +1,17 @@
+{
+  "name": "signupForm",
+  "version": "1.0.0",
+  "description": "ERROR: No README data found!",
+  "main": "app.js",
+  "dependencies": {
+    "request": "~2.64.0",
+    "body-parser": "~1.14.1",
+    "express": "~4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}

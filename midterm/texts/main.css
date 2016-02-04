@@ -1,0 +1,98 @@
+.main{
+	width: 100vw;
+	height: 75vh;
+	overflow: hidden;
+	background-color: #dadada;
+}
+.top-nav{
+	width: 100vw;
+	height: 25vh;
+	font-size: 20px;
+	background-image: url(../images/nav-back.png);
+	background-size: cover;
+	margin: 0;
+	padding-right: 0;
+	padding-left: 0;
+	box-shadow: 0px 0px 10px black;
+}
+.footer-nav{
+	width: 100vw;
+	font-size: 20px;
+	background-image: url(../images/nav-back.png);
+	background-size: cover;
+	margin: 0;
+	padding-right: 0;
+	padding-left: 0;
+	box-shadow: 0px 0px 10px black;
+}
+.nav-btn li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 0 20px 0 20px;
+	margin: 0;
+	z-index: 15;
+	padding: 10px 20px 10px 20px;
+	font-family: SFNewRepublic;
+	font-size: 35px;
+	color: white;
+}
+.nav-btn li a{
+	color: white;
+}
+.top-nav li:hover{
+	background-color: white;
+}
+.logo{
+	width: 10%;
+	height: 20%;
+	z-index: 12;
+	position: relative;
+	margin: 10px;
+	display: inline-block;
+}
+.h2-left{
+	width: 33%;
+	min-width: 500px;
+	float: left;
+	text-align: center;
+	height: 33vh;
+	position: relative;
+	display: inline-block;
+	height: auto;
+}
+.h2-left img{
+	border: 1px solid #2b1f23;
+	border-radius: 5px;
+	width: 75%;
+	margin: 25px;
+	z-index: 5;
+	box-shadow: 0 0 10px black;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+}
+.title-bar{
+   position: absolute; 
+   width: 50%; 
+   height: 50%;
+   background-image: url(../images/btn-back.png);
+   background-size: cover;
+   top: 50%;
+   z-index: 7;
+   box-shadow: 0 4px 2px -2px black;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 10px;
+}
+.title-bar h2{
+	margin: 0;
+   position: absolute; 
+   left: 50%; 
+   width: 100%; 
+   font-size: 50px;
+   color: white;
+   font-family: SFNewRepublic;
+   z-index: 10;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}

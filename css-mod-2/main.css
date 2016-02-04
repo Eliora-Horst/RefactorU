@@ -1,0 +1,150 @@
+/*---Horizontally Spaced---*/
+.horz-space{
+	margin: auto;
+	padding: 20px;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+.horz-text{
+	display: inline-block;
+	padding: 20px;
+}
+/*---Vertically Spaced---*/
+.vert-space{
+padding-bottom: 1px;
+padding-top: 1px;
+}
+.vert-text{
+	padding-top: 2px;
+}
+/*---Horizontal List---*/
+.horz-list li{
+	display: inline;
+	list-style-type: none;
+	padding:0;
+	margin: 0;
+}
+/*---Buttons---*/
+.btn{
+	background-color:#E5777E;
+	border-radius:5px;
+	border:1px solid #E5777E;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+}
+.btn:hover{
+	background-color: #FAA8AE;
+}
+.btn-lrg{
+	font-size:24px;
+	padding-top:15px;
+	padding-left:60px;
+	padding-bottom: 15px;
+	padding-right: 60px;
+}
+.btn-med{
+	font-size:14;
+	padding-top:10px;
+	padding-left:40px;
+	padding-bottom: 10px;
+	padding-right: 40px;
+}
+.btn-sml{
+	font-size:12px;
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+}
+/*---Navigation---*/
+.btn-background{
+	background-color:#E5777E;
+	border-radius:5px;
+	border:1px solid #E5777E;
+	cursor:pointer;
+	color:#ffffff;
+}
+/*---Pagination---*/
+.pagination{
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+.pagination span{
+	color: #C5C5C5;
+	padding:10px;
+}
+.pagination a{
+	color: #E5777E;
+	padding: 10px;
+}
+.underline-inactive{
+	border-bottom: solid #E5777E;
+}
+.underline-active{
+	border-bottom: solid #C5C5C5;
+}
+/*---Media Block---*/
+.media-block{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.media-block p{
+	float: left;
+	padding-bottom:40px;
+	position: relative; 
+}
+.media-nest{
+	position: relative;
+	left: 60px;
+}
+.comment-block{
+	display: flex;
+}
+/*---Tabs---*/
+.tabs li{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.tabs{
+	position: relative;
+	padding: 5px;
+	margin-top:1px;
+}
+.tab-indv{
+	color: blue;
+	padding-right:10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+	border: solid 1px #A09FDD;
+	border-radius: 5px 5px 0 0;
+	display: inline;
+	font-weight: 700;
+	z-index: 2;
+	position: relative;
+}
+.tab-box{
+	border:solid 1px #A09FDD;
+	padding: 10px;
+	position: relative;
+	border-radius: 5px;
+}
+.tab-active{
+	color: blue;
+	padding-right:10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+	border-left:  solid 1px #A09FDD;
+	border-top:  solid 1px #A09FDD;
+	border-right:  solid 1px #A09FDD;
+	border-bottom: solid 1px white;
+	border-radius: 5px 5px 0 0;
+	display: inline;
+	font-weight: 700;
+	z-index: 2;
+	position: relative;
+}

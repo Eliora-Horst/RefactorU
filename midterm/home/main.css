@@ -1,0 +1,143 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+}
+h1 {
+	font-family: SFNewRepublic;
+	position: absolute;
+	z-index: 15;
+	padding: 10px;
+	text-align: center;
+	overflow: hidden;
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+  	width: 100%;
+}
+.centering{
+	text-align: center;
+	margin: auto;
+}
+.side-bar{
+	background-image: url(../images/side-back.png);
+	background-size: cover;
+	color: white;
+	height: 100vh;
+	width: 33%;
+/*	border: 1px solid black;*/
+	position: absolute;
+	z-index: 8;
+	box-shadow: 1px 0px 5px black;
+}
+.side-bar a{
+	color: white;
+}
+.images{
+	width: 70%;
+	z-index: 12;
+	position: absolute;
+  	left: 50%;
+  	top: 25%;
+  	transform: translate(-50%, -50%);
+}
+
+.links{
+	display: block;
+	height: 100vh;
+	z-index: 10;
+	position: absolute;
+	width: 33%;
+	top: 50%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+}
+.links ul{
+	margin-top: 60vh;
+	background-color: grey;
+	margin-right: 5px;
+	width: 100%;
+	box-shadow: 0 4px 10px -2px black;
+	border: 1px solid black;
+}
+.links li{
+	padding: 20px;
+	width: 20vw;
+	margin-left: 10%;
+}
+.links li:hover{
+	background-color: white;
+}
+.links-style{
+	font-family: SFNewRepublic;
+	font-size: 30px;
+	color: white;
+}
+.popOut{
+	background-color: white;
+	opacity: .8;
+	position: absolute;
+	border-radius: 10px;
+	height: 50%;
+	width: 33vw;
+	margin-left: 100%;
+	top:25%;
+	left: 16.6vw;
+	padding: 20px;
+	border: 1px solid #C0C0C0;
+}
+.popOut p{
+	padding: 10%;
+	font-size: 30px;
+	top: 25%;
+	left: 25%
+}
+.mainBody{
+	width: 70vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 5;
+	right: 0;
+	background: url(../images/background.png);
+	animation: play 20s linear infinite;
+	background-position: 0px 0px;
+	background-color: #181818 ;
+	box-shadow: 0px 0px 5px black;
+	opacity: .8;
+}
+@keyframes play{
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+/*.footer-nav{
+	font-size: 20px;
+	background-color: black;
+	margin: 0;
+	padding-right: 0;
+	padding-left: 0;
+	position: absolute;
+	display: block;
+	z-index: 20;
+
+}
+.footer-nav li{
+	display: inline-block;
+	list-style-type: none;
+	padding:0;
+	margin: 0;
+	z-index: 15;
+	padding: 10px 20px 10px 20px;
+	font-family: SFNewRepublic;
+}
+.footer-nav li:hover{
+	background-color: white;
+}*/
+
+@font-face{
+	font-family: 'SFNewRepublic';
+	src: url('../SFNewRepublic.ttf') format('truetype');
+}

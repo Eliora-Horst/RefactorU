@@ -1,0 +1,213 @@
+/*---Main---*/
+html, body{
+	max-width: 960px;
+}
+h1{
+	font-family: 'Alegreya';
+	font-weight: 400;
+	background-color:#4F608F;
+	margin: 0;
+	color: white;
+	position: left;
+}
+h3{
+	margin: 0;
+	padding:5px;
+	background-color: #2F4172;
+	font-family: 'Alegreya';
+	color: white;
+	font-size: 24px;
+}
+a:link{
+	text-decoration: none;
+}
+.main-body{
+	width: 100vw;
+	font-family: 'Alegreya';
+}
+.img-size{
+	height: 50vw;
+	float: left;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	position: relative;
+	z-index: 2;
+}
+.poem-size{
+	font-family: 'Alegreya';
+	font-size: 16px;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.centering{
+	text-align: center;
+	margin: auto;
+	border-bottom: 2px solid #2F4073;
+}
+/*---Buttons---*/
+.btn{
+	cursor:pointer;
+	color:#ffffff;
+	font-family: serif;
+	display: inline-block;
+}
+.btn-medium{
+	font-size:22px;
+	padding-top:10px;
+	padding-left:20px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+}
+.btn-small{
+	font-size: 16px;
+	padding-top:10px;
+	padding-left:20px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+.btn:hover{
+	background-color: #4F608F;
+}
+.btn-blue{
+	background-color:#2F4172;
+}
+/*---Navigation---*/
+.horz-space{
+	margin: auto;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+}
+.nav-list li{
+	display: inline-block;
+	list-style-type: none;
+	padding:0;
+	margin: 0;
+}
+.nav-background{
+	background-color:#2F4172;
+	cursor:pointer;
+	color:#ffffff;
+	margin: 0;
+	border-bottom: 2px solid #2F4073;
+}
+/*---Read More Section---*/
+.read-more-style{
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin: 0;
+	background-color: #4F608F;
+	position: relative;
+
+}
+/*---Boxes are repeated because they would not work with URLS separate*/
+.box1{
+	width: 180px;
+	height:180px;
+	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+	margin: 0 auto 0 auto;
+	background:url(/Users/student/projects/html3/Annabel-Lee.jpg);
+	background-size: cover;
+	border-radius: 5px;
+	border: 1px solid #07143A;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px rgba(7,20,58,.5);
+}
+.box1:hover .overlay{
+	opacity: 1;
+}
+.box2{
+	width: 180px;
+	height:180px;
+	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+	margin: 0 auto 0 auto;
+	background:url(/Users/student/projects/html3/tell-tale-heart.jpg);
+	background-size: cover;
+	border-radius: 5px;
+	border: 1px solid #07143A;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px rgba(7,20,58,.5);
+}
+.box2:hover .overlay{
+	opacity: 1;
+}
+.box3{
+	width: 180px;
+	height:180px;
+	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+	margin: 0 auto 0 auto;
+	background:url(/Users/student/projects/html3/spirits-of-the-dead.jpg);
+	background-size: cover;
+	border-radius: 5px;
+	border: 1px solid #07143A;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px rgba(7,20,58,.5);
+}
+.box3:hover .overlay{
+	opacity: 1;
+}
+.box4{
+	width: 180px;
+	height:180px;
+	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+	margin: 0 auto 0 auto;
+	background:url(/Users/student/projects/html3/the-purloined-letter.jpg);
+	background-size: cover;
+	border-radius: 5px;
+	border: 1px solid #07143A;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px rgba(7,20,58,.5);
+}
+.box4:hover .overlay{
+	opacity: 1;
+}
+.box5{
+	width: 180px;
+	height:180px;
+	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+	margin: 0 auto 0 auto;
+	background:url(/Users/student/projects/html3/berenice.jpg);
+	background-size: cover;
+	border-radius: 5px;
+	border: 1px solid #07143A;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px rgba(7,20,58,.5);
+}
+.box5:hover .overlay{
+	opacity: 1;
+}
+.box6{
+	width: 180px;
+	height:180px;
+	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+	margin: 0 auto 0 auto;
+	background:url(http://www.fromoldbooks.org/White-Selborne/pages/234-The-Raven-Corvus-Corax/234-The-Raven-Corvus-Corax-q50-1469x1651.jpg);
+	background-size: cover;
+	border-radius: 5px;
+	border: 1px solid #07143A;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px rgba(7,20,58,.5);
+}
+.box6:hover .overlay{
+	opacity: 1;
+}
+.overlay{
+	background:rgba(0,0,0,.75);
+	text-align: center;
+	padding: 45px 0 66px 0;
+	opacity: 0;
+	transition: opacity .25s ease;
+}
+.text{
+	font-family: 'Alegreya';
+	font-weight: 500;
+	color: rgba(255,255,255,.85);
+	font-size: 30px;
+}

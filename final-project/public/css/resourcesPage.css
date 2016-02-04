@@ -1,0 +1,78 @@
+.main{
+	width: 100vw;
+	height: 75vh;
+	overflow: hidden;
+	background-color: #dadada;
+}
+h1{
+	font-size: 50px;
+	font-family: SFNewRepublic;
+}
+.subheading{
+	margin-top: 10%;
+	margin-left: 10%;
+}
+.subheading ul > li{
+	padding: 10px;
+	left: 40%;
+}
+.subheading ul > li > a {
+	padding: 10px;
+	font-size: 60px;
+	font-family: SFNewRepublic;
+	color: #585858;
+}
+.subheading ul > li > a:hover{
+	background-color: white;
+	color: #C0C0C0;
+	text-decoration: none;
+}
+
+
+.top-nav{
+	width: 100vw;
+	height: 25vh;
+	font-size: 20px;
+	background-image: url(../images/nav-back.png);
+	background-size: cover;
+	margin: 0;
+	padding-right: 0;
+	padding-left: 0;
+	box-shadow: 0px 0px 10px black;
+}
+.footer-nav{
+	width: 100vw;
+	font-size: 20px;
+	background-image: url(../images/nav-back.png);
+	background-size: cover;
+	margin: 0;
+	padding-right: 0;
+	padding-left: 0;
+	box-shadow: 0px 0px 10px black;
+}
+.nav-btn li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 0 20px 0 20px;
+	margin: 0;
+	z-index: 15;
+	padding: 10px 20px 10px 20px;
+	font-family: SFNewRepublic;
+	font-size: 35px;
+	color: white;
+}
+.nav-btn li a{
+	color: white;
+}
+.top-nav li:hover{
+	background-color: white;
+}
+
+.logo{
+	width: 10%;
+	height: 20%;
+	z-index: 12;
+	position: relative;
+	margin: 10px;
+	display: inline-block;
+}

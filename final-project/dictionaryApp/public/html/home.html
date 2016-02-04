@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="dictionaryApp">
+	<head>
+		<title>Middle English Dictionary</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+	</head>
+
+	<body ng-controller="dictionaryController">
+		<form ng-submit = "submitQuery()">
+			<input name="queryEntry" placeholder="Search Word" type="text" ng-model = "queryEntry">
+
+			<input type="submit">
+		</form>
+		
+			<h1>{{translate.MidEng}}</h1>
+			<h2>{{translate.DictDef}}</h2>
+
+		<script type="text/javascript" src="../js/main.js"></script>
+	</body>
+</html>

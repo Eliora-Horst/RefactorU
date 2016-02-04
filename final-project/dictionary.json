@@ -1,0 +1,10 @@
+[{"_id":{"$oid":"5630e25eda2d12dc7f425dd4"},"MidEng":"that","ModEng":"that","DictDef":"Used to indicate a person, thing, idea, state, event, time, remark, etc., as pointed out or present, mentioned before, supposed to be understood, or by way of emphasis.","Audio":"https://raw.githubusercontent.com/HrothgarXII/Midterm/master/audio/that.mp3","AltSp":["Þat"],"PoS":["pron. dem.","pron. rel.","conj"],"__v":0},
+{"_id":{"$oid":"5630ec00da2d12dc7f425dd6"},"MidEng":"aprill","ModEng":"april","DictDef":"The fourth month of the year, containing 30 days.","Audio":"https://raw.githubusercontent.com/HrothgarXII/Midterm/master/audio/aprill.mp3","AltSp":["Auerylle","avril"],"PoS":["n"],"__v":0},
+{"_id":{"$oid":"5630ed3ada2d12dc7f425dd7"},"MidEng":"alle","ModEng":"all","DictDef":"The whole of","Audio":"https://raw.githubusercontent.com/HrothgarXII/Midterm/master/audio/all.mp3https://raw.githubusercontent.com/HrothgarXII/Midterm/master/audio/all.mp3","AltSp":["alle","al","hall","allre","alra","alre"],"PoS":["adj.","adv"],"__v":0},
+{"MidEng":"whan","ModEng":"when"},
+{"MidEng":"shoures","ModEng":"showers"},
+{"MidEng":"soote","ModEng":"sweet"},
+{"MidEng":"droughte","ModEng":"drought"},
+{"MidEng":"hath","ModEng":"has"},
+{"MidEng":"perced", "ModEng":"pierced"},
+{"MidEng":"roote","ModEng":"root"}]

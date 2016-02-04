@@ -1,0 +1,14 @@
+img{
+	width: 100%;
+	position: relative;
+}
+
+
+.marker {
+	background-image: url(Gold_Ingot.png);
+	background-size: contain;
+	position:absolute;
+	width:35px;
+	height: 35px;
+	/*background-color: gold;*/
+}

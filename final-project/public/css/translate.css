@@ -1,0 +1,45 @@
+.form-input{
+	width: 70%;
+	margin: auto;
+	margin-top: 10%;
+	display: block;
+}
+.submit{
+	font-size: 20px;
+	padding: 5px;
+	margin: 10px;
+	height: 10vh;
+	width: 10vw;
+	position: relative;
+	bottom: 50px;
+}
+h1{
+	font-family: SFNewRepublic;
+	font-size: 40px;
+	top: 35%;
+	text-align: left;
+}
+h2{
+	display: inline-block;
+}
+
+textarea{
+	font-size: 20px;
+}
+.translation{
+	padding: 10px;
+	width: 70vw;
+	height: 25vh;
+	background-color: white;
+	border: 3px solid #181818;
+}
+.entry{
+	font-size: 20px;
+	padding: 5px;
+	height: 20vh;
+	width: 55vw;
+	display: inline-block;
+}
+span{
+	font-size: 20px;
+}

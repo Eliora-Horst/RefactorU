@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app = "lingoApp">
+	<head>
+		<title>Lingo: Translation App</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+	</head>
+	<body ng-controller = "lingoController">
+		<div class = "main-body">
+		
+		<img src="../css/logo.png" class="images">
+		
+			<form ng-submit = "translate()">
+				<input type = "text" placeholder = "Language From" ng-model = "translate.fromLang">
+				<input type = "text" placeholder = "Language To" ng-model = "translate.toLang">
+				<input type = "text" placeholder = "Word" ng-model = "translate.word">
+
+				<input type = "submit" value="Translate">
+			</form>
+			<h3>Translation: {{translatedWord}}</h3>
+		</div>
+		<script type="text/javascript" src="../js/main.js"></script>
+	</body>
+</html>

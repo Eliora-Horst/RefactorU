@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html ng-app="textApp">
+	<head>
+		<title>The General Prologue - Chaucer - MMDB</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="../../../home/main.css">
+		<link rel="stylesheet" type="text/css" href="../../../texts/main.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	</head>
+
+	<body>
+		<div class="top-nav nav-btn">
+				<ul>
+				<img src="../../../images/logo.png" class="logo">
+					<li><a href="../../../home/home.html">Home</a></li>
+					<li><a href="../../../texts/texts.html">Texts</a></li>
+					<li><a href="../../../resources/resources.html">Resources</a></li>
+					<li><a href="../../../contact/contact.html">Contact</a></li>
+				</ul>
+		</div>
+
+		<div class="side-nav">
+			<ul>
+				<li><a href="../poetry.html">Poetry</a>
+			    	<ul>
+				      	<li><a href="../chaucher.html">Chaucer</a></li>
+				      	<li><a href="#">Layamon</a></li>
+				      	<li><a href="#">Skelton</a></li>
+			     	</ul>
+				</li>
+				<li><a href="#">Stories</a>
+			    	<ul>
+				      	<li><a href="#">Malory</a></li>
+			     	</ul>
+				</li>
+				<li><a href="#">Non Fiction</a>
+			    	<ul>
+				      	<li><a href="#">Murder Pamplets</a></li>
+				      	<li><a href="../../../resources/Jokes/jokes.html">Jokes</a></li>
+			     	</ul>
+				</li>
+		</div>
+
+
+          <div class="columns">
+		<header>
+	      <h2 class="text-center newfont">Canterbury Tales</h2>
+	      <h3 class="text-center newfont">General Prologue</h3>
+	    </header>
+
+		<section ng-controller="TabController as tab">
+          <ul class="nav nav-pills">
+            <li ng-class="{ active:tab.isSet(1) }">
+              <a href ng-click="tab.setTab(1)">Middle English</a>
+            </li>
+            <li ng-class="{ active:tab.isSet(2) }">
+              <a href ng-click="tab.setTab(2)">Modern English</a>
+            </li>
+            <li ng-class="{ active:tab.isSet(3) }">
+              <a href ng-click="tab.setTab(3)">Side By Side</a>
+            </li>
+          </ul>
+
+	          <div ng-show="tab.isSet(1)">
+	          	<div class="audio">
+					<button class = "btnA" onclick="playSound()" type="button"></button>
+					<button class = "btnB" onclick="pauseSound()" type="button"></button><br>
+					<audio id="sound">
+        				<source src="../../../audio/general-prologue.mp3" type="audio/mpeg">
+        				Your browser does not support HTML5 audio.
+      				</audio>
+      			</div>
+      			<div class="span-block">
+	            <blockquote>
+			      <span onmousedown="Whan.play()">Whan</span>
+			      <span onmousedown="That.play()">that</span>
+			      <span onmousedown="Aprill.play()">aprill</span>
+			      <span onmousedown="With.play()">with</span>
+			      <span onmousedown="His.play()">his</span>
+			      <span onmousedown="Shoures.play()">shoures</span>
+			      <span onmousedown="Soote.play()">soote</span><br>
+
+			      <span onmousedown="The.play()">The</span>
+			      <span onmousedown="Droughte.play()">droughte</span>
+			      <span onmousedown="Of.play()">of</span>
+			      <span onmousedown="March.play()">March</span>
+			      <span onmousedown="Hath.play()">hath</span>
+			      <span onmousedown="Perced.play()">perced</span>
+			      <span onmousedown="To.play()">to</span>
+			      <span onmousedown="The.play()">the</span>
+			      <span onmousedown="Roote.play()">roote</span><br>
+
+			      <span onmousedown="And.play()">And</span>
+			      <span onmousedown="Bathed.play()">bathed</span>
+			      <span onmousedown="Every.play()">every</span>
+			      <span onmousedown="Veyne.play()">veyne</span>
+			      <span onmousedown="In.play()">in</span>
+			      <span onmousedown="Swich.play()">swich</span>
+			      <span onmousedown="Licour.play()">licour,</span><br>
+
+			      <span onmousedown="Of.play()">Of</span>
+			      <span onmousedown="Which.play()">which</span>
+			      <span onmousedown="Vertu.play()">vertu</span>
+			      <span onmousedown="Engendred.play()">engendred</span>
+			      <span onmousedown="Is.play()">is</span>
+			      <span onmousedown="The.play()">the</span>
+			      <span onmousedown="Flour.play()">flour;</span><br>
+
+			      <span onmousedown="Whan.play()">Whan</span>
+			      <span onmousedown="Zephirus.play()">Zephirus</span>
+			      <span onmousedown="Eek.play()">eek</span>
+			      <span onmousedown="With.play()">with</span>
+			      <span onmousedown="His.play()">his</span>
+			      <span onmousedown="Sweete.play()">sweete</span>
+			      <span onmousedown="Breeth.play()">breeth</span><br>
+
+			      <span onmousedown="Inspired.play()">Inspired</span>
+			      <span onmousedown="Hath.play()">hath</span>
+			      <span onmousedown="In.play()">in</span>
+			      <span onmousedown="Every.play()">every</span>
+			      <span onmousedown="Holt.play()">holt</span>
+			      <span onmousedown="And.play()">and</span>
+			      <span onmousedown="Heeth.play()">heeth</span><br>
+
+			      <span onmousedown="The.play()">The</span>
+			      <span onmousedown="Tendre.play()">tendre</span>
+			      <span onmousedown="Croppes.play()">croppes,</span>
+			      <span onmousedown="And.play()">and</span>
+			      <span onmousedown="The.play()">the</span>
+			      <span onmousedown="Yonge.play()">yonge</span>
+			      <span onmousedown="Sonne.play()">sonne</span><br>
+
+			      <span onmousedown="Hath.play()">Hath</span>
+			      <span onmousedown="In.play()">in</span>
+			      <span onmousedown="The.play()">the</span>
+			      <span onmousedown="Ram.play()">Ram</span>
+			      <span onmousedown="His.play()">his</span>
+			      <span onmousedown="Halfe.play()">halfe</span>
+			      <span onmousedown="Cours.play()">cours</span>
+			      <span onmousedown="Yronne.play()">yronne,</span><br>
+
+			      <span onmousedown="And.play()">And</span>
+			      <span onmousedown="Smale.play()">smale</span>
+			      <span onmousedown="Foweles.play()">foweles</span>
+			      <span onmousedown="Maken.play()">maken</span>
+			      <span onmousedown="Melodye.play()">melodye,</span><br>
+
+			      <span onmousedown="That.play()">That</span>
+			      <span onmousedown="Slepen.play()">slepen</span>
+			      <span onmousedown="All.play()">al</span>
+			      <span onmousedown="The.play()">the</span>
+			      <span onmousedown="Nyght.play()">nyght</span>
+			      <span onmousedown="With.play()">with</span>
+			      <span onmousedown="Open.play()">open</span>
+			      <span onmousedown="Ye.play()">ye -</span><br>
+
+			      <span onmousedown="So.play()">(So</span>
+			      <span onmousedown="Priketh.play()">priketh</span>
+			      <span onmousedown="Hem.play()">hem</span>
+			      <span onmousedown="Nature.play()">Nature</span>
+			      <span onmousedown="In.play()">in</span>
+			      <span onmousedown="Hir.play()">hir</span>
+			      <span onmousedown="Corages.play()">corages);</span><br>
+
+			      <span onmousedown="Thanne.play()">Thanne</span>
+			      <span onmousedown="Longen.play()">longen</span>
+			      <span onmousedown="Folk.play()">folk</span>
+			      <span onmousedown="To.play()">to</span>
+			      <span onmousedown="Goon.play()">goon</span>
+			      <span onmousedown="On.play()">on</span>
+			      <span onmousedown="Pilgrimages.play()">pilgrimages</span><br>
+
+			      <span onmousedown="And.play()">And</span>
+			      <span onmousedown="Palmeres.play()">palmeres</span>
+			      <span onmousedown="For.play()">for</span>
+			      <span onmousedown="To.play()">to</span>
+			      <span onmousedown="Seken.play()">seken</span>
+			      <span onmousedown="Straunge.play()">straunge</span>
+			      <span onmousedown="Strondes.play()">strondes</span><br>
+
+			      <span onmousedown="To.play()">To</span>
+			      <span onmousedown="Ferne.play()">ferne</span>
+			      <span onmousedown="Halwes.play()">halwes,</span>
+			      <span onmousedown="Kowthe.play()">kowthe</span>
+			      <span onmousedown="In.play()">in</span>
+			      <span onmousedown="Sondry.play()">sondry</span>
+			      <span onmousedown="Londes.play()">londes;</span><br>
+
+			      <span onmousedown="And.play()">And</span>
+			      <span onmousedown="Specially.play()">specially</span>
+			      <span onmousedown="From.play()">from</span>
+			      <span onmousedown="Every.play()">every</span>
+			      <span onmousedown="Shires.play()">shires</span>
+			      <span onmousedown="Ende.play()">ende</span><br>
+
+			      <span onmousedown="Of.play()">Of</span>
+			      <span onmousedown="Engelond.play()">Engelond</span>
+			      <span onmousedown="To.play()">to</span>
+			      <span onmousedown="Caunterbury.play()">Caunterbury</span>
+			      <span onmousedown="They.play()">they</span>
+			      <span onmousedown="Wende.play()">wende,</span><br>
+
+			      <span onmousedown="The.play()">The</span>
+			      <span onmousedown="Hooly.play()">hooly</span>
+			      <span onmousedown="Blisful.play()">blisful</span>
+			      <span onmousedown="Martir.play()">martir</span>
+			      <span onmousedown="For.play()">for</span>
+			      <span onmousedown="To.play()">to</span>
+			      <span onmousedown="Seke.play()">seke</span><br>
+
+			      <span onmousedown="That.play()">That</span>
+			      <span onmousedown="Hem.play()">hem</span>
+			      <span onmousedown="Hath.play()">hath</span>
+			      <span onmousedown="Holpen.play()">holpen,</span>
+			      <span onmousedown="Whan.play()">whan</span>
+			      <span onmousedown="That.play()">that</span>
+			      <span onmousedown="They.play()">they</span>
+			      <span onmousedown="Were.play()">were</span>
+			      <span onmousedown="Seke.play()">seke.</span>
+				</blockquote>
+				</div>
+	          </div>
+
+	          <div ng-show="tab.isSet(2)" class="block-reg">
+	            <blockquote><p>
+	When in April, with it's sweet showers<br>
+	The drought of March is pierced to the root<br>
+	And bathes every vein in such liquor,<br>
+	Wherein flowers are sired and grown<br>
+	When the West Wind also with his sweet breath<br>
+	Again sweeps through every holt and heath<br>
+	The tender leaves and buds, and the young sun<br>
+	Into the Ram one half his course has run,<br>
+	And small birds make melody<br>
+	That sleep all through the night with open eye -<br>
+	(So Nature pricks them on to ramp and rage) -<br>
+	Then do folk long to go on pilgramages,<br>
+	And palmers too go seeking strange strands,<br>
+	To distant shrines, known in sundry lands.<br>
+	And especially from every shire's end<br>
+	From England to Canterbury then wend,<br>
+	The holy blessed martyr they do seek<br>
+	For he has helped them when they were sick.</p></blockquote>
+	          </div>
+
+	          <div ng-show="tab.isSet(3)">
+	              <blockquote>
+	                <pre>
+	Whan that Aprill, with his shoures soote
+	The droghte of March hath perced to the roote
+	And bathed every veyne in swich licour,
+	Of which vertu engendred is the flour;
+5	Whan Zephirus eek with his sweete breeth
+	Inspired hath in every holt and heeth
+	The tendre croppes, and the yonge sonne
+	Hath in the Ram his halfe cours yronne,
+	And smale foweles maken melodye,
+10	That slepen al the nyght with open eye-
+	(So priketh hem Nature in hir corages);
+	Thanne longen folk to goon on pilgrimages
+	And palmeres for to seken straunge strondes
+	To ferne halwes, kowthe in sondry londes;
+15	And specially from every shires ende
+	Of Engelond, to Caunterbury they wende,
+	The hooly blisful martir for to seke
+	That hem hath holpen, whan that they were seeke.</pre>
+<pre>
+	When in April, with it's sweet showers
+	The drought of March is pierced to the root
+	And bathes every vein in such liquor,
+	Wherein flowers are sired and grown
+5	When the West Wind also with his sweet breath
+	Again sweeps through every holt and heath
+	The tender leaves and buds, and the young sun
+	Into the Ram one half his course has run,
+	And small birds make melody
+10	That sleep all through the night with open eye - 
+	(So Nature pricks them on to ramp and rage) -
+	Then do folk long to go on pilgramages,
+	And palmers too go seeking strange strands,
+	To distant shrines, known in sundry lands.
+15	And especially from every shire's end
+	From England to Canterbury then wend,
+	The holy blessed martyr they do seek
+	For he has helped them when they were sick.</pre>
+	              </blockquote>
+	          </div>
+         </div>
+        </section>
+
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="audio.js"></script>
+		<script type="text/javascript" src="word-audio.js"></script>
+	</body>
+			<footer>
+		<div class = "top-nav nav-btn centering">
+			<nav>
+				<ul>
+					<li><a href="../../../home/home.html">Home</a></li>
+					<li><a href="../../../texts/texts.html">Texts</a></li>
+					<li><a href="../../../resources/resources.html">Resources</a></li>
+					<li><a href="../../../contact/contact.html">Contact</a></li>
+				</ul>
+				<p>Modern Medieval Database &copy;2015</p>
+			</nav>
+		</div>
+		</footer>
+</html>

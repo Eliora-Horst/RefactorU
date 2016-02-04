@@ -1,0 +1,24 @@
+
+Node: JS runtime environment
+
+Difference between node.js and browswer js: 
+	No window (command line interface)
+	No DOM
+
+	Modules
+	File system access
+	Networking access
+	Hardware access
+
+	Web server
+
+Running a script is like running a function; the script itself can have arguments
+Access command-line args with "process.argv"
+	process.argv[0] = 'node'
+	process.argv[1] = script
+	process.argv[2 +] = args
+
+Share code between files with 'module.exports' and 'require()'
+	require returns value of parameter
+
+fs is a core modules
